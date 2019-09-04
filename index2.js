@@ -173,7 +173,9 @@ window.onload = function () {
         //Check if player reached the end
         function endGoal(){
             if(checkCollision(player, defenseClass)){
-                document.querySelector("#myModal").style.display = 'block';
+                window.open('gallaga/gallaga.html', '_self');
+                //document.querySelector("#myModal").style.display = 'block';
+                
             }
         }
     }
