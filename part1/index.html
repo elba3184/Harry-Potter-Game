@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <link href="../img/icons-&-items/favicon.ico" rel="icon" type="image/x-icon" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/stylesheet.css">
   <link rel="stylesheet" href="../css/styles.css">
@@ -17,12 +18,22 @@
 
 <body>
 
+ 
+
   <div class="game-intro">
-    <img>
+    <div class='character-talking'>
+      <img src='../img/characters/hermione.png'>
+      <div class="speech-bubble">
+        <p>Hermione: "We need to study for O.W.L.S!!"</p>
+      </div>
+    </div>
+      
     <br>
-    <button id="start-button">Head to the Library</button>
-    <p>Use the arrow keys to control Ron!</p>
-    <img>
+    <div class='intro-div'>
+      <button id="start-button">Head to the Library</button>
+      <p>Use the arrow keys to control Ron!</p>
+    </div>
+    
   </div>
   <div id="game-board">
     <canvas id="canvas" width="400px" height="500px"></canvas>
@@ -43,7 +54,7 @@
     <!-- Modal content -->
     <div class="modal-content">
       <div class='modal-div'>Study with Hermione!
-        <img src='../img/hermione.png'>
+        <img src='../img/characters/hermione.png'>
       </div>
       
       <!-- <btn>Quiz me</btn> -->

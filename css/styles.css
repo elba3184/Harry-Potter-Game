@@ -1,6 +1,6 @@
 
 body{
-    background-image: url('../img/hogwarts.jpg');
+    background-image: url('../img/backgrounds/hogwarts.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 0;
@@ -12,12 +12,61 @@ body{
   
   .game-intro {
     float: left;
-    padding: 0% 10%;
+    width: 600px;
+    height: 600px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 50px;
   }
   
   .game-intro p {
-    font-size: 18px;
+    margin-top: 10px;
+    font-size: 24px;
+    color: rgb(255, 255, 0);
+    width: 80%;
   }
+
+  .character-talking{
+    display:flex;
+    flex-direction: row;
+  }
+
+  .speech-bubble {
+    position: relative;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 4em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:50%; 
+    height: 50%;
+    margin-left: 35px;
+   }
+  
+   .speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20%;
+    height: 20%;
+    border: 52px solid transparent;
+    border-top-color: rgba(255, 255, 255, .5);
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -26px;
+    margin-bottom: -52px;
+  }
+ 
+.intro-div{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
   
   #start-button{
     font-size: 30px;
@@ -33,9 +82,11 @@ body{
   #game-board {
       float: left;
       border: 3px solid black;
-      background-color: rgba(255, 255, 255, .5)
+      background-color: rgba(255, 255, 255, .5);
+      margin: 75px;
   }
   
+
 
 
 
@@ -114,8 +165,6 @@ body{
 
 
 
-
-
-#galaga-game{
-  border: 1px solid red;
+body h1{
+  color: white;
 }

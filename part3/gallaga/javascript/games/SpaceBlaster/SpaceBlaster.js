@@ -5,7 +5,7 @@ function endGallaga(){
 
 	var answer = confirm("Wow! You were able to get rid of 5 dementors in a row!!");
 	if(answer){
-		window.open("www.google.com");
+		window.open("../../winner/winningPage.html");
 	}
 
 // 	// Get the modal

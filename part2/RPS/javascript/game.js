@@ -13,15 +13,15 @@ var gameModule = (function () {
             overallResultClass,
             overallResultText,
             character,
-            choices = ['spell1', 'spell2', "spell3"];
+            choices = ['rock', 'paper', "scissors"];
 
         // Text Variables
         var playerWinsText = "You win the round!",
             computerWinsText = "Computer wins the round!",
             tieText = "It's a Tie!",
-            overallPlayerWinText = "<h2>Well Done!</h2> <p>You won against the computer.</p>",
-            overallComputerWinText = "<h2>You Lose...</h2> <p>The computer has defeated you</p>",
-            overallTieText = "<h2>It's a draw!</h2> <p>Good effort.</p>";
+            overallPlayerWinText = "<h2>Well Done!</h2> <p>You won against the computer!</p>",
+            overallComputerWinText = "<h2>You Lose...</h2> <p>The computer has defeated you!</p>",
+            overallTieText = "<h2>It's a draw!</h2> <p>Good effort young wizard!</p>";
 
         // Set Characters
         function setCharacter(div, className) {
@@ -33,7 +33,7 @@ var gameModule = (function () {
             div.parents('.starter-screen').hide().next().addClass('animate-in');
         }
 
-        // Decides on whether the computer is playing spell1, spell2 or spell3
+        // Decides on whether the computer is playing rock, paper or scissors
         function computerDecision() {
 
             var randomChoice = Math.floor(Math.random() * choices.length);
@@ -103,32 +103,32 @@ var gameModule = (function () {
                 winner = tieText;
                 resultClass = "tie";
 
-            } else if (playerChoice === "spell1") {
+            } else if (playerChoice === "rock") {
 
-                // If the player chooses "spell1"
+                // If the player chooses "Rock"
                 switch (computerChoice) {
-                    case "spell2":
+                    case "scissors":
                         winner = playerWinsText;
                         playerScore++;
                         resultClass = "win";
                     break;
-                    case "spell3":
+                    case "paper":
                         winner = computerWinsText;
                         computerScore++;
                         resultClass = "lose";
                     break;
                 }
 
-            }  else if (playerChoice === "spell3") {
+            }  else if (playerChoice === "paper") {
 
                 // If the player chooses "Paper"
                 switch (computerChoice) {
-                    case "spell1":
+                    case "rock":
                         winner = playerWinsText;
                         playerScore++;
                         resultClass = "win";
                     break;
-                    case "spell2":
+                    case "scissors":
                         winner = computerWinsText;
                         computerScore++;
                         resultClass = "lose";
@@ -140,12 +140,12 @@ var gameModule = (function () {
 
                 // If the player chooses "Scissors"
                 switch (computerChoice) {
-                    case "spell1":
+                    case "rock":
                         winner = computerWinsText;
                         computerScore++;
                         resultClass = "lose";
                     break;
-                    case "spell2":
+                    case "paper":
                         winner = playerWinsText;
                         playerScore++;
                         resultClass = "win";
@@ -309,15 +309,13 @@ var gameModule = (function () {
 
         });
 
-    
-        function endGameRPS(){
-            var answer = confirm("You won the battle!");
-	        if(answer){
-		        window.open("../../../part3/index3.html");
-	        }
+        function endGameRPS() {
+            var answer = confirm("You won!");
+            if (answer) {
+                window.open("../../../part3/index3.html");
+            }
         }
-    
-    
+
     });
 
 }());

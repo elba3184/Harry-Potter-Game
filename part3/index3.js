@@ -22,12 +22,12 @@ window.onload = function () {
         ron.onload = function () {
             ctx.drawImage(ron, player.x, player.y, 50, 50);
         }
-        ron.src = "../img/ronFlying.png"
+        ron.src = "../img/characters/ronFlying.png"
 
 
         var player = {
             x: 0,
-            y: 0,
+            y: 250,
             w: 50,
             h: 50,
             moveLeft: function () { 
@@ -69,7 +69,7 @@ window.onload = function () {
         darkArts.onload = function () {
             ctx.drawImage(darkArts, defenseClass.x, defenseClass.y, 50, 50);
         }
-        darkArts.src = "../img/defense-class.png"
+        darkArts.src = "../img/icons-&-items/wand-icon.png"
 
 
         var defenseClass = {

@@ -1,0 +1,7 @@
+        // let dimensions = $('#footies')[0].getBoundingClientRect(); 
+        // console.log(x,y)
+        // if(y < dimensions.top || y > dimensions.bottom || x < dimensions.left || x > dimensions.right){
+        //     //If so, he makes a U-turn
+        //     random += 180;
+        //     break;
+        // }

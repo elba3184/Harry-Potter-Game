@@ -9,9 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <link href="../img/icons-&-items/favicon.ico" rel="icon" type="image/x-icon" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/stylesheet.css">
-  
   <link rel="stylesheet" href="../css/styles.css">
 
   <title>Harry Potter Game - Project2</title>
@@ -20,12 +20,19 @@
 <body>
 
   <div class="game-intro">
-    <img>
+    <div class='character-talking'>
+      <img src='../img/characters/harryFlying.png'>
+      <div class="speech-bubble">
+        <p>Harry: "Hurry Ron! We're gonna need you to use your patronus!"</p>
+      </div>
+    </div>
     <br>
-    <button id="start-button">Get rid of the dementors!</button>
-    <p>Use the arrow keys to control Ron!</p>
-    <img>
+    <div class='intro-div'>
+      <button id="start-button">Get rid of the dementors!</button>
+      <p>Use the arrow keys to control Ron!</p>
+    </div>
   </div>
+
   <div id="game-board">
     <canvas id="canvas" width="400px" height="500px"></canvas>
   </div>

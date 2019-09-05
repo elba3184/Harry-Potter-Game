@@ -25,7 +25,7 @@ window.onload = function () {
         ron.onload = function () {
             ctx.drawImage(ron, player.x, player.y, 50, 50);
         }
-        ron.src = "../img/ronFlying.png"
+        ron.src = "../img/characters/ronFlying.png"
 
 
         var player = {
@@ -72,7 +72,7 @@ window.onload = function () {
         books.onload = function () {
             ctx.drawImage(books, library.x, library.y, 50, 50);
         }
-        books.src = "../img/books.png"
+        books.src = "../img/icons-&-items/books.png"
 
 
         var library = {
@@ -181,8 +181,8 @@ window.onload = function () {
         //Check if player reached the end
         function endGoal(){
             if(checkCollision(player, library)){
-                console.log('here');
-                document.querySelector("#myModal").style.display = 'block';
+                window.open('HPquiz/HPquiz.html', '_self');
+                //document.querySelector("#myModal").style.display = 'block';
 
             }
         }

@@ -20,12 +20,12 @@ window.onload = function () {
         ron.onload = function () {
             ctx.drawImage(ron, player.x, player.y, 50, 50);
         }
-        ron.src = "../img/ronFlying.png"
+        ron.src = "../img/characters/ronFlying.png"
 
 
         var player = {
             x: 0,
-            y: 0,
+            y: 450,
             w: 50,
             h: 50,
             moveLeft: function () { 
@@ -67,7 +67,7 @@ window.onload = function () {
         deathlyHallows.onload = function () {
             ctx.drawImage(deathlyHallows, battle.x, battle.y, 50, 50);
         }
-        deathlyHallows.src = "../img/deathlyHallows.png"
+        deathlyHallows.src = "../img/icons-&-items/deathlyHallows.png"
 
 
         var battle = {
