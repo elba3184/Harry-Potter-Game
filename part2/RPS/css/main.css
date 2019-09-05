@@ -367,7 +367,7 @@ animation:move-clouds-back 200s linear infinite;
 }
 
 .rock {
-  background-image: url("../images/confundus.png");
+  background-image: url("../../../img/icons-&-items/book-icon.png");
 }
 
 .paper {
@@ -379,27 +379,27 @@ animation:move-clouds-back 200s linear infinite;
 }
 
 .character1 {
-  background-image: url("../../../img/harry-wand.png");
+  background-image: url("../../../img/characters/harry-wand.png");
 }
 
 .character2 {
-  background-image: url("../../../img/ron-wand.png");
+  background-image: url("../../../img/characters/ron-wand.png");
 }
 
 .character3 {
-  background-image: url("../../../img/hermione-wand.png");
+  background-image: url("../../../img/characters/hermione-wand.png");
 }
 
 .comp1 {
-  background-image: url("../../../img/voldemort.png");
+  background-image: url("../../../img/characters/voldemort.png");
 }
 
 .comp2 {
-  background-image: url("../../../img/bellatrix.png");
+  background-image: url("../../../img/characters/bellatrix.png");
 }
 
 .comp3 {
-  background-image: url("../../../img/lucius.png");
+  background-image: url("../../../img/characters/lucius.png");
 }
 
 /*==========================================
