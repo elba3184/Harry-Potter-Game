@@ -275,7 +275,11 @@ animation:move-clouds-back 200s linear infinite;
 .medium-container {
   max-width: 900px;
 } 
-
+/* .starter-screen .start {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+} */
 /*==========================================
   GENERAL
 ==========================================*/
@@ -354,20 +358,20 @@ animation:move-clouds-back 200s linear infinite;
   BACKGROUNDS
 ==========================================*/
 .tie {
-  background-color: rgb(41, 85, 228);
+  background-color: rgb(41, 85, 228, 0.98);
   
 }
 
 .win {
-  background-color: rgb(41, 119, 74);
+  background-color: rgb(240, 197, 38 0.98);
 }
 
 .lose {
-  background-color: rgb(122, 0, 0);
+  background-color: rgb(122, 0, 0, 0.98);
 }
 
 .rock {
-  background-image: url("../../../img/icons-&-items/alohomora.png");
+  background-image: url("../../../img/icons-&-items/serpensortia.png");
 }
 
 .paper {
@@ -375,7 +379,7 @@ animation:move-clouds-back 200s linear infinite;
 }
 
 .scissors {
-  background-image: url("../../../img/icons-&-items/stupefy.png");
+  background-image: url("../../../img/icons-&-items/imperio.png");
 }
 
 .character1 {
@@ -628,8 +632,6 @@ h3 {
   transition: .5s;
 }
 
-
-
 .player-character,
 .computer-character {
   width: 7rem;
@@ -694,6 +696,7 @@ h3 {
   top: -100%;
 }
 .weapon-chosen .result {
+  z-index: 7;
   top: 0;
   transition: 1s cubic-bezier(0.46, -0.41, 0.3, 1.52) all 3s;
 }
@@ -778,6 +781,7 @@ h3 {
 
 .computer-chip,
 .player-chip {
+  z-index: 6;
   position: absolute;
   width: 100%;
   text-align: center;
@@ -842,6 +846,8 @@ h3 {
 
 .computer-choice-icon,
 .player-choice-icon {
+  /* z-index: -1; */
+  z-index: 10;
   width: 10rem;
   height: 10rem;
   display: inline-block;
@@ -851,6 +857,8 @@ h3 {
 @media only screen and (min-width: 1200px) {
   .computer-choice-icon,
   .player-choice-icon {
+    /* z-index: -1; */
+    z-index: 10;
     width: 20rem;
     height: 20rem;
   }
@@ -926,6 +934,7 @@ h3 {
   .rounds-end-screen ul {
     display: flex;
     justify-content: space-around;
+    
   }
 }
 .rounds-end-screen li {
