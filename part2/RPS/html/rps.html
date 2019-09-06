@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel = "stylesheet" type = "text/css" href = "../css/main.css"/>
     <!-- <link rel = "stylesheet" type = "text/css" href = "rps.scss"/> -->
-    <link href="../../../img/favicon.ico" rel="icon" type="image/x-icon" />
+<!-- ../img/favicon.ico" rel="icon" type="image/x-icon" /> -->
     <!-- <link rel="stylesheet" href="specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" /> -->
     <link rel="stylesheet" href="../css/stylesheet.css" type="text/css" charset="utf-8" />
     <title>Spell Attack</title>
@@ -54,9 +54,9 @@
             <div class="medium-container">
                 <h2>Choose your character</h2>
                 <ul>
-                    <li role="button" class="character1" data-character="character1"><span>Ron</span></li>
-                    <li role="button" class="character2" data-character="character2"><span>Harry</span></li>
-                    <li role="button" class="character3" data-character="character3"><span>Hermoine</span></li>
+                    <li role="button" class="character1" data-character="character1"><span>Harry</span></li>
+                    <li role="button" class="character2" data-character="character2"><span>Ron</span></li>
+                    <li role="button" class="character3" data-character="character3"><span>Hermione</span></li>
                 </ul>
             </div>
         </div>
@@ -71,7 +71,7 @@
                 <ul>
                     <li role="button" class="comp1" data-character="comp1"><span>Voldermort</span></li>
                     <li role="button" class="comp2" data-character="comp2"><span>Bellatrix</span></li>
-                    <li role="button" class="comp3" data-character="comp3"><span>Lucius Malfoy</span></li>
+                    <li role="button" class="comp3" data-character="comp3"><span>Lucius</span></li>
                 </ul>
             </div>
         </div>
@@ -127,11 +127,15 @@
                     <div class="weapon-inner">
 
                         <h3>Choose your weapon</h3>
-
+                        <canvas id="canvas"></canvas>
+                        
                         <ul>
-                            <li class="rock" role="button" data-weapon="rock"><span>Confundus</span></li>
-                            <li class="paper" role="button" data-weapon="paper"><span>Apicio</span></li>
-                            <li class="scissors" role="button" data-weapon="scissors"><span>Avada Cadevera</span></li>
+                            <!-- <button id="toggle-info" style="position:fixed; position:absolute; top: 25%; right:50%; z-index:99;" onclick="infoButtonClick()">
+                                I AM A BUTTON
+                            </button> -->
+                            <li class="rock" role="button" data-weapon="rock" onclick="infoButtonClick1()"><span>Alohomora</span></li>
+                            <li class="paper" role="button" data-weapon="paper" onclick="infoButtonClick2()"><span>Incendio</span></li>
+                            <li class="scissors" role="button" data-weapon="scissors" onclick="infoButtonClick3()"><span>Stupefy</span></li>
                         </ul>
 
                     </div>

@@ -287,7 +287,7 @@ animation:move-clouds-back 200s linear infinite;
   margin: 0.5rem;
   border-radius: 100%;
   background-color: rgb(255, 255, 255, 0.4);
-  border: 5px solid #8CCAD3;
+  /* border: 5px solid #4284A4; */
   background-repeat: no-repeat;
 }
 
@@ -307,7 +307,7 @@ animation:move-clouds-back 200s linear infinite;
   border-radius: 5px;
 }
 .button.active {
-  background-color: #8CCAD3;
+  background-color: #4284A4;
   color: #333;
 }
 @media only screen and (min-width: 800px) {
@@ -315,7 +315,7 @@ animation:move-clouds-back 200s linear infinite;
     color: #333;
   }
   .button.active:hover:before, .button.active:hover:after {
-    background-color: #8CCAD3;
+    background-color: 4284A4;
   }
 }
 .button:before, .button:after {
@@ -325,7 +325,7 @@ animation:move-clouds-back 200s linear infinite;
   width: 51%;
   height: 100%;
   top: 0;
-  background-color: #8CCAD3;
+  background-color: #4284A4;
   transition: 0.4s ease-out all;
 }
 .button:before {
@@ -367,21 +367,24 @@ animation:move-clouds-back 200s linear infinite;
 }
 
 .rock {
-  background-image: url("../../../img/icons-&-items/book-icon.png");
+  background-image: url("../../../img/icons-&-items/alohomora.png");
 }
 
 .paper {
-  background-image: url("http://hannahch.com/images/paper.svg");
+  background-image: url("../../../img/icons-&-items/incendio.png");
 }
 
 .scissors {
-  background-image: url("http://hannahch.com/images/scissors.svg");
+  background-image: url("../../../img/icons-&-items/stupefy.png");
 }
 
 .character1 {
   background-image: url("../../../img/characters/harry-wand.png");
 }
-
+/* .character1 span:hover {
+  color: white;
+  transition: .5s;
+} */
 .character2 {
   background-image: url("../../../img/characters/ron-wand.png");
 }
@@ -570,6 +573,14 @@ h3 {
   width: 10rem;
   height: 10rem;
 }
+
+/* span > .character1 {
+  height: 30px;
+  width: 100px;
+  font-size: 15px;
+  color: white;
+} */
+
 @media only screen and (min-width: 800px) {
   .choose-character li,
   .choose-rival li {
@@ -579,18 +590,45 @@ h3 {
   .choose-character li:hover,
   .choose-rival li:hover {
     border-color: rgb(255, 255, 255, 0.6);
-    background-color: #8CCAD3;
+    background-color: #4284A4;
     transition: 0.4s ease-out all;
+    
   }
 }
-.choose-character span,
-.choose-rival span {
-  font-size: 0;
+.choose-rival span:hover {
+  color: white;
+  transition: .5s;
+}
+
+.choose-character span {
   color: transparent;
-  text-shadow: none;
+  text-shadow: gray;
   background-color: transparent;
   border: 0;
+  transition: .5s;
+  font-size: 32pt;
+  padding-bottom: 60px;
+  padding-right:20px;
+  padding-left:20px;
 }
+.choose-rival span {
+  color: transparent;
+  text-shadow: gray;
+  background-color: transparent;
+  border: 0;
+  transition: .5s;
+  font-size: 28pt;
+  padding-bottom: 60px;
+  padding-right:20px;
+  padding-left:20px;
+}
+
+.choose-character span:hover {
+  color: white;
+  transition: .5s;
+}
+
+
 
 .player-character,
 .computer-character {
@@ -710,18 +748,33 @@ h3 {
     margin: 0 4rem;
   }
   .weapon li:hover {
-    background-color: #8CCAD3;
+    background-color: #4284A4;
     border-color: white;
     transition: 0.4s ease-out all;
   }
 }
 .weapon span {
-  font-size: 0;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
   border: 0;
+  transition: .5s;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  font-size: 15pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 200px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
+
+.weapon span:hover {
+  color: white;
+  transition: .5s;
+}
+
 
 .computer-chip,
 .player-chip {
@@ -877,4 +930,24 @@ h3 {
 }
 .rounds-end-screen li {
   margin-bottom: 1rem;
+}
+
+
+/*BUTTON*/
+
+body {
+  width: 100%;
+  overflow: hidden;
+}
+a { color: #CCC }
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 98;
+  pointer-events: none;
+  /* background-color: black; */
 }
