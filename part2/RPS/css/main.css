@@ -363,7 +363,7 @@ animation:move-clouds-back 200s linear infinite;
 }
 
 .win {
-  background-color: rgb(240, 197, 38 0.98);
+  background-color: rgb(240, 197, 38, 0.98);
 }
 
 .lose {
